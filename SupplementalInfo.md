@@ -1,6 +1,6 @@
 # Mise Windows Setup Supplemental Info
 
-This docuemnt is for supplemental info about installing mise on Windows and WSL (Ubuntu). For the main guide, go back to the [./README.md](./README.md).
+This document is for supplemental info about installing mise on Windows and WSL (Ubuntu). For the main guide, go back to the [./README.md](./README.md).
 
 - [Mise Windows Setup Supplemental Info](#mise-windows-setup-supplemental-info)
 - [Configuration Setting Explanations](#configuration-setting-explanations)
