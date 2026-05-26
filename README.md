@@ -113,8 +113,10 @@ sudo apt update && sudo apt install --only-upgrade mise
 
 - Setup an initial global node version: `mise use -g node@24`
 - Setup pnpm globally:
-  - `mise use -g pnpm@10.32.1`
+  - `mise use -g pnpm@11.3`
   - `pnpm setup`
+
+Note that pnpm has its own self-update command. If you use this instead of mise, mise seems to still recognize it, but to be safe you should update using the same install command (`mise use -g pnpm@version` and `pnpm setup`).
 
 # Install Global npm Packages
 
