@@ -78,11 +78,13 @@ sudo apt install -y mise
 Add to `~/.bashrc` (replace `<your_username>`):
 
 ```bash
+# Ignore windows config when in windows mount user profile directory tree. This should be BEFORE
+# mise activation, otherwise you'll see an error about untrusted windows config file when first
+# entering wsl terminal if you're in a windows path (like /mnt/Users/windows.username/).
+export MISE_IGNORED_CONFIG_PATHS=/mnt/c/Users/<your_username>/.config/mise/config.toml
+
 # Mise activation
 eval "$(mise activate bash)"
-
-# Ignore windows config when in windows mount user profile directory tree
-export MISE_IGNORED_CONFIG_PATHS=/mnt/c/Users/<your_username>/.config/mise/config.toml
 ```
 
 Refresh shell: `source ~/.bashrc`
